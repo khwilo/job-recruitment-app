@@ -2,100 +2,70 @@
   "candidates": [
     {
       "id": "1",
-      "name": {
-        "first": "Terry",
-        "last": "Marshall"
-      },
+      "name": "Terry Marshall",
       "yearsOfExperience": "2",
       "jobTitle": "Software Engineer",
       "email": "terry.marshall@example.com"
     },
     {
       "id": "2",
-      "name": {
-        "first": "Eloane",
-        "last": "Henry"
-      },
+      "name": "Eloane Henry",
       "yearsOfExperience": "1",
       "jobTitle": "QA Engineer",
       "email": "eloane.henry@example.com"
     },
     {
       "id": "3",
-      "name": {
-        "first": "Braxton",
-        "last": "Morris"
-      },
+      "name": "Braxton Morris",
       "yearsOfExperience": "5",
       "jobTitle": "Business Development Engineer",
       "email": "braxton.morris@example.com"
     },
     {
       "id": "4",
-      "name": {
-        "first": "Alex",
-        "last": "Price"
-      },
+      "name": "Alex Price",
       "yearsOfExperience": "1",
       "jobTitle": "Software Engineer",
       "email": "alex.price@example.com"
     },
     {
       "id": "5",
-      "name": {
-        "first": "Alyssa",
-        "last": "Lemaire"
-      },
+      "name": "Alyssa Lemaire",
       "yearsOfExperience": "10",
       "jobTitle": "Database Administrator",
       "email": "alyssa.lemaire@example.com"
     },
     {
       "id": "6",
-      "name": {
-        "first": "Aloísio",
-        "last": "Ferreira"
-      },
+      "name": "Aloísio Ferreira",
       "yearsOfExperience": "2",
       "jobTitle": "Software Engineer",
       "email": "aloisio.ferreira@example.com"
     },
     {
       "id": "7",
-      "name": {
-        "first": "Nataniel",
-        "last": "Moraes"
-      },
+      "name": "Nataniel Moraes",
       "yearsOfExperience": "4",
       "jobTitle": "Front-end Software Engineer",
       "email": "nataniel.moraes@example.com"
     },
     {
       "id": "8",
-      "name": {
-        "first": "Johnny",
-        "last": "Cox"
-      },
+      "name": "Johnny Cox",
       "yearsOfExperience": "3",
       "jobTitle": "Data Scientist",
       "email": "johnny.cox@example.com"
     },
     {
       "id": "9",
-      "name": {
-        "first": "Clifford",
-        "last": "Wagner"
-      },
+      "name": "Clifford Wagner",
       "yearsOfExperience": "6",
       "jobTitle": "IT Technical Support Officer",
       "email": "clifford.wagner@example.com"
     },
     {
       "id": "10",
-      "name": {
-        "first": "Victor",
-        "last": "Lowe"
-      },
+      "name": "Victor Lowe",
       "yearsOfExperience": "3",
       "jobTitle": "Software Engineer",
       "email": "victor.lowe@example.com"
