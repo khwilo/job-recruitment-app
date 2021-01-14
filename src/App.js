@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import NotFound from './components/NotFound';
 import CandidatesList from './containers/Candidates';
 import * as candidateActions from './redux/actions/candidateActions';
+import CandidateProfile from './components/Profile';
 
 function App({ actions, candidates }) {
   React.useEffect(() => {
@@ -24,6 +25,7 @@ function App({ actions, candidates }) {
         <Nav />
 
         <Switch>
+          <Route path='/profile/:id' component={CandidateProfile} />
           <Route exact path='/'>
             <CandidatesList candidates={candidates} />
           </Route>
