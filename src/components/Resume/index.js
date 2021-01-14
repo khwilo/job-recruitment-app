@@ -8,6 +8,7 @@ const Resume = () => {
   const { id: candidateId } = useParams();
   const [candidate, setCandidate] = React.useState({});
   const [applications, setApplications] = React.useState([]);
+  const [comment, setComment] = React.useState('');
 
   const getCandidates = () => {
     fetchCandidate(candidateId).then((data) => {
@@ -25,6 +26,24 @@ const Resume = () => {
     getCandidateApplications();
     getCandidates();
   }, []);
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    setComment('');
+
+    fetch('http://localhost:4000/questions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        recruiterId: '1',
+        candidateId: candidate.id,
+        comment: comment,
+      }),
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json))
+      .catch((err) => console.log(err));
+  };
 
   return (
     <div className='wrapper'>
@@ -58,6 +77,28 @@ const Resume = () => {
           });
         })}
       </section>
+
+      <div className='comments-section'>
+        <form className='comments-section__form'>
+          <div className='form__group'>
+            <textarea
+              rows='5'
+              cols='20'
+              className='form__group'
+              onChange={(event) => {
+                setComment(event.target.value);
+              }}
+            ></textarea>
+          </div>
+          <button
+            type='submit'
+            className='submit-btn'
+            onClick={(event) => handleFormSubmit(event)}
+          >
+            save
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
