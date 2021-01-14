@@ -1,6 +1,8 @@
 // Site Navigation
 import './nav.css';
 
+import { Link } from 'react-router-dom';
+
 const Nav = () => (
   <header className='header'>
     <h1 className='site-logo'>
@@ -9,14 +11,14 @@ const Nav = () => (
     <nav className='nav'>
       <ul className='nav__list'>
         <li className='nav__item'>
-          <a className='nav__link' href='/'>
+          <Link className='nav__link' to='/'>
             Home
-          </a>
+          </Link>
         </li>
         <li className='nav__item'>
-          <a className='nav__link' href='/about'>
+          <Link className='nav__link' to='/about'>
             About
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

@@ -1,7 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import Nav from './components/Nav';
+import NotFound from './components/NotFound';
 import CandidatesList from './containers/Candidates';
 
 function App() {
@@ -27,9 +29,16 @@ function App() {
 
   return (
     <div>
-      <Nav />
+      <Router>
+        <Nav />
 
-      <CandidatesList candidates={candidates} />
+        <Switch>
+          <Route exact path='/'>
+            <CandidatesList candidates={candidates} />
+          </Route>
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
     </div>
   );
 }
