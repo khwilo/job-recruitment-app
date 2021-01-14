@@ -46,6 +46,10 @@ img {
   font-weight: 700;
 }
 
+.ml-text {
+  margin-left: 1em;
+}
+
 /* ===========================
   Layout
 ===========================*/
@@ -61,4 +65,9 @@ img {
 
 .wrapper {
   padding: 2em;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
 }
