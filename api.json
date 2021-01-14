@@ -72,5 +72,41 @@
     }
   ],
   "questions": [],
-  "applications": []
+  "applications": [
+    {
+      "id": "1",
+      "candidateId": "2",
+      "resume": {
+        "workExperience": [
+          {
+            "company": "Apple",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          },
+          {
+            "company": "Google",
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+          }
+        ],
+        "skills": ["Java", "TypeScript"]
+      }
+    },
+    {
+      "id": "2",
+      "candidateId": "5",
+      "resume": {
+        "workExperience": [
+          {
+            "company": "LinkedIn",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          }
+        ],
+        "skills": ["HTML", "CSS", "JavaScript"]
+      }
+    },
+    {
+      "id": "3",
+      "candidateId": "8",
+      "resume": {}
+    }
+  ]
 }
