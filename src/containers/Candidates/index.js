@@ -7,11 +7,10 @@ const Candidates = ({ candidates }) => (
       {/* Iterate through the candidates data and display them on the screen */}
       {candidates.map((candidate) => {
         const { id, name } = candidate;
-        const fullName = `${name.first} ${name.last}`;
 
         return (
           <div key={id}>
-            <Candidate id={id} name={fullName} />
+            <Candidate id={id} name={name} />
           </div>
         );
       })}

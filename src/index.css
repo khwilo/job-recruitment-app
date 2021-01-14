@@ -40,6 +40,17 @@ img {
 }
 
 /* ===========================
+  Typography
+===========================*/
+.text-bold {
+  font-weight: 700;
+}
+
+.ml-text {
+  margin-left: 1em;
+}
+
+/* ===========================
   Layout
 ===========================*/
 .flow > * + * {
@@ -54,4 +65,9 @@ img {
 
 .wrapper {
   padding: 2em;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
 }
