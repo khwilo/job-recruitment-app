@@ -6,9 +6,10 @@ import { bindActionCreators } from 'redux';
 import './App.css';
 import Nav from './components/Nav';
 import NotFound from './components/NotFound';
+import CandidateProfile from './components/Profile';
+import CandidateResume from './components/Resume';
 import CandidatesList from './containers/Candidates';
 import * as candidateActions from './redux/actions/candidateActions';
-import CandidateProfile from './components/Profile';
 
 function App({ actions, candidates }) {
   React.useEffect(() => {
@@ -26,6 +27,7 @@ function App({ actions, candidates }) {
 
         <Switch>
           <Route path='/profile/:id' component={CandidateProfile} />
+          <Route path='/resume/:id' component={CandidateResume} />
           <Route exact path='/'>
             <CandidatesList candidates={candidates} />
           </Route>

@@ -1,0 +1,24 @@
+.section--resume {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.section--resume__experience-title,
+.section--resume__skills-title {
+  text-decoration: underline;
+}
+
+.skills {
+  display: flex;
+  color: teal;
+}
+
+.skills > * + * {
+  margin-left: 1em;
+}
+
+.skill-name {
+  margin-top: 0;
+}
