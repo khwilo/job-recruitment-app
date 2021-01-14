@@ -22,3 +22,34 @@
 .skill-name {
   margin-top: 0;
 }
+
+.comments-section {
+  margin-top: 3em;
+}
+
+.comments-section__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 625px) {
+  .comments-section__form {
+    width: 70%;
+  }
+}
+
+.form__group {
+  display: flex;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+.submit-btn {
+  padding: 0.5em 2em;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid gray;
+}
