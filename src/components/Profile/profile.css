@@ -1,5 +1,6 @@
 .profile {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 5em);
@@ -20,4 +21,14 @@
   .section--profile {
     width: 40%;
   }
+}
+
+.profile__footer {
+  margin-top: 2em;
+}
+
+.viewCV-text:hover,
+.viewCV-text:focus {
+  font-weight: 700;
+  text-decoration: underline;
 }
