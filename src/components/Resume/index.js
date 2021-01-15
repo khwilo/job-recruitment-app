@@ -29,7 +29,6 @@ const Resume = () => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    setComment('');
 
     fetch('http://localhost:4000/questions', {
       method: 'POST',
@@ -43,6 +42,8 @@ const Resume = () => {
       .then((response) => response.json())
       .then((json) => console.log(json))
       .catch((err) => console.log(err));
+
+    setComment('');
   };
 
   return (
@@ -79,24 +80,22 @@ const Resume = () => {
       </section>
 
       <div className='comments-section'>
-        <form className='comments-section__form'>
+        <form
+          className='comments-section__form'
+          onSubmit={(event) => handleFormSubmit(event)}
+        >
           <div className='form__group'>
             <textarea
               rows='5'
               cols='20'
               className='form__group'
+              value={comment}
               onChange={(event) => {
                 setComment(event.target.value);
               }}
             ></textarea>
           </div>
-          <button
-            type='submit'
-            className='submit-btn'
-            onClick={(event) => handleFormSubmit(event)}
-          >
-            save
-          </button>
+          <input type='submit' value='Save' className='submit-btn' />
         </form>
       </div>
     </div>
