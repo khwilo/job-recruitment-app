@@ -53,7 +53,7 @@ const Resume = () => {
         {/* since resume is a nested object, iterate through the values to display them on the screen */}
         {applications.map((submission) => {
           const { resume } = submission;
-          return Object.keys(resume).map((field) => {
+          return Object.keys(resume).map((field, fieldIndex) => {
             if (field === 'workExperience') {
               return resume[field].map((work, workIndex) => (
                 <div key={workIndex} className='work'>
@@ -63,7 +63,7 @@ const Resume = () => {
               ));
             }
             return field === 'skills' ? (
-              <div>
+              <div key={fieldIndex}>
                 <h3 className='section--resume__skills-title'>Skills</h3>
                 <div className='skills'>
                   {resume[field].map((skill, skillIndex) => (
