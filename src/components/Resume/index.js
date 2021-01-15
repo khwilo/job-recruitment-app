@@ -30,18 +30,20 @@ const Resume = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    fetch('http://localhost:4000/questions', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        recruiterId: '1',
-        candidateId: candidate.id,
-        comment: comment,
-      }),
-    })
-      .then((response) => response.json())
-      .then((json) => console.log(json))
-      .catch((err) => console.log(err));
+    if (comment.length > 0) {
+      fetch('http://localhost:4000/questions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          recruiterId: '1',
+          candidateId: candidate.id,
+          comment: comment,
+        }),
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((err) => console.log(err));
+    }
 
     setComment('');
   };
