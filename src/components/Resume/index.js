@@ -90,7 +90,7 @@ const Resume = () => {
             <textarea
               rows='5'
               cols='20'
-              className='form__group'
+              className='form__control'
               value={comment}
               onChange={(event) => {
                 setComment(event.target.value);
